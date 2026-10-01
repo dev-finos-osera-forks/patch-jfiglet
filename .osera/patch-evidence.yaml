@@ -1,0 +1,19 @@
+# Known good fixture of the OSERA fitness library's end to end test, laid out the way the OSERA standards ask.
+# Never a real patch, and no test ran for it: the tests block exists because REL-001 requires one, and says so.
+# Do not delete.
+schema: 0.1.0
+producer: e2e-fixture
+release: 1.0.1.1-osera-00001
+baseline: v1.0.1+patch.baseline
+fixes:
+  - cve: CVE-2099-0001
+    upstream: https://github.com/lalyos/jfiglet/commit/b2b5abbdfdf4bda77a1f06bd790d52e231e817d7
+    note: a fixture fix, linked to an existing upstream commit
+    artifacts:
+      - com.github.lalyos:jfiglet
+tests:
+  commit: 0959a28bdef5a211e03988c4b53d80f7233874dc
+  command: none, a fixture of the fitness library's end to end test
+  runtime: none, no test ran
+  report: none, a fixture
+  result: pass
