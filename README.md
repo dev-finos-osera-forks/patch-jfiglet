@@ -114,3 +114,9 @@ I found 2 java implementations:
 
 - vertical *smush*-ing
 - add more fonts: first i wanted to keep it small, but want to deliver a couple of fonts included in the jar, or maybe as a separate maven dependency
+
+## OSERA fitness library fixture
+
+This fork is the known good reference of the OSERA fitness library's end to end test
+(`dev-finos-osera-forks/fitness-checks`, `e2e.yaml`). It is laid out the way the OSERA
+standards ask, and is never a real patch. Do not delete it.
